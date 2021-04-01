@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Sagas Game</title>
+  </head>
+  <body>
+    <header class="imagesSeries">
+      <input
+        type="radio"
+        name="imageSelect"
+        id="tvd"
+        class="imageSelect"
+        value="The Vampire Diaries"
+      />
+      <label for="tvd"><img src="/images/tvd7.jpg" /></label>
+
+      <input
+        type="radio"
+        name="imageSelect"
+        id="pj"
+        class="imageSelect"
+        value="Percy Jackson"
+      />
+      <label for="pj"><img src="/images/Percy-3.jpg" /></label>
+
+      <input
+        type="radio"
+        name="imageSelect"
+        id="himym"
+        class="imageSelect"
+        value="How I Met Your Mother"
+      />
+      <label for="himym"
+        ><img src="/images/how-i-met-your-mother-1024x704.jpg"
+      /></label>
+
+      <input
+        type="radio"
+        name="imageSelect"
+        id="ga"
+        class="imageSelect"
+        value="Greys Anatomy"
+      />
+      <label for="ga"><img src="/images/greys.jpg" /></label>
+    </header>
+    <section class="questionContainer">
+      <h1 class="question"></h1>
+      <input type="text" class="answer" placeholder="Resposta" />
+      <button onclick="check()">Enviar</button>
+    </section>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
