@@ -7,7 +7,6 @@
     box-sizing: border-box;
     font-family: 'Kiwi Maru', serif;
 
-    color: white;
 }
 
 /*body*/
@@ -20,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: #000000;
+   
 }
 
 /*header*/
@@ -58,7 +57,7 @@ label {
 }
 
 input[type="radio"]:checked+label {
-    border: 2px solid #00FF0A;
+    border: 2px solid #3c00ff;
 
     box-shadow: 0px 50px 40px -20px rgba(0, 0, 0, 0.25);
 
@@ -119,4 +118,61 @@ button {
     color: white;
     font-size: 1.3rem;
     text-align: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: -5rem;
+    bottom: 0rem;
+}
+
+.circle img.ok {
+    width: 25px;
+    height: 25px;
+
+    display: none;
+}
+
+.circle img.x {
+    width: 25px;
+    height: 25px;
+
+    display: none;
+}
+
+.circleNext {
+    width: 60px;
+    height: 60px;
+    background: #69F96E;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+
+    cursor: pointer;
+
+    display: none;
+    
+}
+
+.circleNext img {
+    width: 30px;
+    height: 30px;
+
+    margin: 15px 0 0 16px;
 }

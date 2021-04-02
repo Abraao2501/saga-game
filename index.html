@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaQuery.css" />
     <title>Sagas Game</title>
   </head>
   <body>
@@ -51,7 +52,15 @@
       <h1 class="question"></h1>
       <input type="text" class="answer" placeholder="Resposta" />
       <button onclick="check()">Enviar</button>
+      <div class="circle">
+        <img src="./images/ok.png" class="ok" />
+        <img src="/images/x.png" class="x" />
+      </div>
     </section>
+
+    <div class="circleNext">
+      <img src="./images/next.png" class="next" />
+    </div>
 
     <script src="/js/index.js"></script>
   </body>

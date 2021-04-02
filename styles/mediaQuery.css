@@ -1,0 +1,9 @@
+@media(min-width: 1440px) {
+    header {
+        justify-content: space-evenly;
+    }
+    label {
+        width: 12rem;
+        height: 7rem;
+    }
+}
