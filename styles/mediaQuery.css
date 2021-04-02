@@ -29,8 +29,7 @@
         align-items: center;
         justify-content: space-between;
     
-        max-height: 45vh;
-        min-height: 40vh;
+        max-height: 35vh;
     
         position: absolute;
         top: 25rem;
@@ -38,7 +37,7 @@
     
     .circleNext {
         left: 6rem;
-        bottom: 0rem;
+        bottom: 6rem;
     }
     
 }
