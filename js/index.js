@@ -167,16 +167,6 @@ function check() {
         //Adicionando borda verde no input text
         inputText.style.borderColor = "#69F96E";
 
-        //Adicionando OK
-        const circleDOM = document.querySelector(".circle");
-        circleDOM.style.background = "#69F96E";
-
-        const okImg = document.querySelector(".ok");
-        const x = document.querySelector(".x");
-
-        okImg.style.display = "block";
-        x.style.display = "none";
-
         //Adicionando Next
         const circleNext = document.querySelector(".circleNext");
         circleNext.style.display = "block";
@@ -195,16 +185,12 @@ function check() {
         //Adicionando borda vermelha no input text
         inputText.style.borderColor = "#FF0000";
 
-        //Adicionando X
+        //Adicionando red
         const circleDOM = document.querySelector(".circle");
         circleDOM.style.background = "#FF0000";
 
-        const x = document.querySelector(".x");
-        const okImg = document.querySelector(".ok");
         const circleNext = document.querySelector(".circleNext");
 
-        x.style.display = "block";
-        okImg.style.display = "none";
         circleNext.style.display = "none";
       }
     }
