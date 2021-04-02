@@ -1,4 +1,4 @@
-const phrases = [
+let phrases = [
   {
     phrase:
       "O futuro é assustador, mas você não pode apenas correr para o passado porque é familiar. Sim, é tentador, mas é um erro.",
@@ -118,6 +118,17 @@ const phrases = [
   },
 ];
 
+//Verificando se existe algum dado no local Sorage
+if (localStorage.getItem("teste") == null) {
+  //Se não existir, criar um local, armazenando as frases
+  localStorage.setItem("teste", JSON.stringify(phrases));
+}
+
+let jsonPhrase = JSON.parse(localStorage.getItem("teste"));
+if (JSON.stringify(phrases) != localStorage.getItem("teste")) {
+  phrases = jsonPhrase;
+}
+
 //Retornando uma frase aleatória dos objetos
 function randomNumber() {
   let numberGeneration = Math.floor(
@@ -128,6 +139,12 @@ function randomNumber() {
 }
 
 let number = randomNumber();
+
+//Se existir apenas uma frase na variavel, selecionar o índice 0
+if (jsonPhrase.length == 1) {
+  number = 0;
+}
+
 let generatedPhrase = phrases[number];
 
 //Exibindo frase selecionada
@@ -166,6 +183,7 @@ function check() {
 
         //Removendo frase do array para esta não se repetir
         phrases.splice(number, 1);
+        localStorage.setItem("teste", JSON.stringify(phrases));
 
         //Adicionando escutador de eventos no button Next
         circleNext.addEventListener("click", () => {
