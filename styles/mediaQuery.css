@@ -44,11 +44,39 @@
         bottom: -8.2rem;
     }
     
-    .circleNext img {
-        width: 30px;
-        height: 30px;
-    
-        margin: 15px 0 0 16px;
+}
+@media(max-width: 575px) {
+    section {
+        top: 45rem;
+    }
+    h1 {
+        font-size: 1rem;
+        max-width: 20rem;
+        text-align: center;
     }
     
+    section {
+        max-height: 80vh;
+
+        position: absolute;
+        top: 45rem;
+    }
+    button {
+        margin-top: 2rem;
+    }
+    input[type="text"] {
+    
+        margin-top: 2rem;
+    }
+
+    .circle {
+        right: 22rem;
+        bottom: 0rem;
+    }
+    
+    .circleNext {
+        display: fixed;
+        left: 15.9rem;
+        bottom:  -38rem;
+    }
 }
